@@ -461,7 +461,90 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form container">
+          <p class="social-items">Subscribe</p>
+          <form>
+            <!-- <div class="footer-form-subscribe"> -->
+            <label for="subscribe_email"></label>
+            <input
+              class="footer-mail-input"
+              type="email"
+              id="subscribe_email"
+              name="subscribe_email"
+              placeholder="E-mail"
+            />
+            <!-- </div> -->
+            <!-- <div> -->
+            <button class="footer-btw-form" type="submit">
+              Subscribe
+              <svg
+                class="subscribe-icon"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  fill="currentColor"
+                  d="m32 2.667-32 15 10.227 3.156L26 8.5 14.002 21.988l.01.003-.012-.003v7.345l5.735-5.576L27 25.999l5-23.333z"
+                />
+              </svg>
+            </button>
+            <!-- </div> -->
+          </form>
+        </div>
       </div>
     </footer>
+    <div class="modal-overlay is-ope">
+      <div class="modal">
+        <p class="title-form">Leave your contacts and we will call you back</p>
+        <button type="button" class="close-btw-modal">
+          <svg class="strategy-icon" width="10" height="10"></svg>
+        </button>
+
+        <form>
+          <!-- Name -->
+          <div>
+            <label for="user_name">Name</label>
+            <input type="text" id="user_name" name="user_name" required />
+          </div>
+          <!-- Phone -->
+          <div>
+            <label for="user_tel">Phone Number</label>
+            <input type="tel" id="user_tel" name="user_tel" required />
+          </div>
+          <!-- Emailk -->
+          <div>
+            <label for="user_mail">Email</label>
+            <input type="email" id="user_mail" name="user_mail" required />
+          </div>
+          <!-- Comment -->
+          <div>
+            <label for="user_comments">Comment</label>
+            <textarea
+              name="user_comments"
+              id="user_comments"
+              placeholder="Text input"
+              rows="8"
+            ></textarea>
+          </div>
+          <!-- Agree -->
+          <div class="">
+            <label for="accept_privacy">
+              <input
+                type="checkbox"
+                id="accept_privacy"
+                name="accept_privacy"
+                value="accept"
+                required
+              />
+              I accept the terms and conditions of the
+              <a href="">Privacy Policy</a>
+            </label>
+          </div>
+          <button type="submit" class="submit-btw-modal">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
