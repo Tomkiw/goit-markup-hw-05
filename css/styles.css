@@ -756,6 +756,7 @@ header a {
 .close-btw-modal:focus {
     background-color: #404bbf;
     border: none;
+    fill: #ffffff;
 }
 
 /* svg icon */
@@ -778,9 +779,7 @@ header a {
     margin-bottom: 16px;
 }
 
-.form-window {
-    margin-top: 16px;
-}
+
 
 .molad-window {
     display: flex;
