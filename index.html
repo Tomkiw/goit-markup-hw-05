@@ -462,32 +462,31 @@
           </ul>
         </div>
         <div class="footer-form container">
-          <p class="social-items">Subscribe</p>
-          <form>
+          <form class="form-footer">
             <!-- <div class="footer-form-subscribe"> -->
-            <label for="subscribe_email"></label>
-            <input
-              class="footer-mail-input"
-              type="email"
-              id="subscribe_email"
-              name="subscribe_email"
-              placeholder="E-mail"
-            />
+            <p class="social-items">Subscribe</p>
+            <label class="footer-label" for="subscribe-email">
+              <input
+                class="footer-mail-input"
+                type="email"
+                id="subscribe-email"
+                name="subscribe-email"
+                placeholder="E-mail"
+              />
+            </label>
+
             <!-- </div> -->
             <!-- <div> -->
             <button class="footer-btw-form" type="submit">
               Subscribe
               <svg
                 class="subscribe-icon"
-                width="20"
-                height="20"
+                width="24"
+                height="24"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
               >
-                <path
-                  fill="currentColor"
-                  d="m32 2.667-32 15 10.227 3.156L26 8.5 14.002 21.988l.01.003-.012-.003v7.345l5.735-5.576L27 25.999l5-23.333z"
-                />
+                <use href="./images/icons.svg#icon-send-subscribe"></use>
               </svg>
             </button>
             <!-- </div> -->
@@ -495,32 +494,37 @@
         </div>
       </div>
     </footer>
+
     <!-- Modal Window -->
     <div class="modal-overlay is-open">
       <div class="modal">
-        <p class="title-form">Leave your contacts and we will call you back</p>
-        <button type="button" class="close-btw-modal">
-          <svg class="strategy-icon" width="10" height="10"></svg>
-        </button>
+        <form class="form-window">
+          <p class="title-form">
+            Leave your contacts and we will call you back
+          </p>
+          <button type="button" class="close-btw-modal">
+            <svg class="modal-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
 
-        <form>
           <!-- Name -->
-          <div>
+          <div class="molad-window container">
             <label for="user_name">Name</label>
             <input type="text" id="user_name" name="user_name" required />
           </div>
           <!-- Phone -->
-          <div>
+          <div div class="molad-window container">
             <label for="user_tel">Phone Number</label>
             <input type="tel" id="user_tel" name="user_tel" required />
           </div>
           <!-- Emailk -->
-          <div>
+          <div class="molad-window container">
             <label for="user_mail">Email</label>
             <input type="email" id="user_mail" name="user_mail" required />
           </div>
           <!-- Comment -->
-          <div>
+          <div class="molad-window container">
             <label for="user_comments">Comment</label>
             <textarea
               name="user_comments"
@@ -530,7 +534,7 @@
             ></textarea>
           </div>
           <!-- Agree -->
-          <div class="">
+          <div class="container">
             <label for="accept_privacy">
               <input
                 type="checkbox"
