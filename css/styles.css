@@ -793,8 +793,41 @@ header a {
     margin-top: 8px;
 }
 
+
+
+
+
+
+
+
+
+.submit-btw-modal {
+    border-radius: 4px;
+    padding: 16px 32px;
+    width: 169px;
+    height: 56px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+
+
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background-color: #4d5ae5;
+}
+
+.container-submit-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 24px;
+    margin: 0 auto;
+}
+
 /* ------Footer form Subscribe------ */
-.footer-form {
+.form-footer {
     display: flex;
 }
 
@@ -832,7 +865,7 @@ header a {
 
 .footer-btw-form {
     border-radius: 4px;
-    padding: 8px 24px;
+    margin-left: 16px;
     min-width: 165px;
     height: 40px;
     background-color: #4d5ae5;
