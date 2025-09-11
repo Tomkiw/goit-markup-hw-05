@@ -504,7 +504,7 @@
         <form>
           <!-- Name -->
           <div class="molad-window">
-            <label for="user-name">Name</label>
+            <label class="label-user" for="user-name">Name</label>
             <div class="molad-window-icon-input">
               <input
                 class="input-name"
@@ -520,7 +520,7 @@
           </div>
           <!-- Phone -->
           <div class="molad-window">
-            <label for="user-tel">Phone Number</label>
+            <label class="label-user" for="user-tel">Phone</label>
             <div class="molad-window-icon-input">
               <input
                 class="input-name"
@@ -537,7 +537,7 @@
           <!-- Email -->
 
           <div class="molad-window">
-            <label for="user_mail">Email</label>
+            <label class="label-user" for="user_mail">Email</label>
             <div class="molad-window-icon-input">
               <input
                 class="input-name"
@@ -553,11 +553,12 @@
           </div>
 
           <!-- Comment -->
-          <div class="molad-window">
-            <label for="user_comments">Comment</label>
+          <div class="molad-window comment">
+            <label class="label-comment" for="user-comment">Comment</label>
             <textarea
-              name="user_comments"
-              id="user_comments"
+              class="text-area"
+              name="user-comment"
+              id="user-comment"
               placeholder="Text input"
               rows="8"
             ></textarea>
@@ -565,24 +566,22 @@
           <!-- Agree -->
           <div class="accept-container">
             <input
+              class="accept-input visually-hidden"
               type="checkbox"
-              id="accept_privacy"
-              name="accept_privacy"
-              value="accept"
+              id="user-privacy"
+              name="user-privacy"
+              value="true"
               required
             />
-            <label for="accept_privacy">
+            <label class="label-comment" for="user-privacy">
               I accept the terms and conditions of the
-              <a href="">Privacy Policy</a>
+              <span class="span-comment"
+                ><svg class="svg-accept" width="10" height="8">
+                  <use href="./images/icons.svg#accept-icon"></use></svg></span
+              ><a class="priv-linkt" href="">Privacy Policy</a>
             </label>
-            <svg class="svg-accept" width="18" height="24">
-              <use href="./images/icons.svg#accept-icon"></use>
-            </svg>
           </div>
-
-          <div class="container-send">
-            <button type="submit" class="send-btw-modal">Send</button>
-          </div>
+          <button type="submit" class="send-btw-modal">Send</button>
         </form>
       </div>
     </div>
