@@ -902,12 +902,16 @@ header a {
     margin-bottom: 24px;
 }
 
-.accept-input:checked {}
+.accept-input:checked {
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
+}
 
 .label-comment {
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
 
@@ -1000,6 +1004,10 @@ header a {
 .subscribe-icon {
     margin-left: 16px;
 
+}
+
+input:focus+svg {
+    fill: #4D5AE5;
 }
 
 /* <use href="./images/icons.svg#icon-instagram"></use> */
