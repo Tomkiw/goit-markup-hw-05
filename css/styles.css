@@ -606,6 +606,7 @@ header a {
     padding: 100px;
     display: flex;
 
+
 }
 
 .container-footer-logo {
@@ -620,6 +621,7 @@ header a {
 .container-footer {
     display: flex;
     align-items: baseline;
+    margin: 0 auto;
 
 }
 
